@@ -43,7 +43,7 @@ export class Form implements OnInit {
     }
   }
 
-  // Getters para facilitar el acceso en el template
+
   get nombre() {
     return this.compromisoForm.get('nombre');
   }
