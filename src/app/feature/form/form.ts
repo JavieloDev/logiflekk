@@ -31,11 +31,11 @@ export class Form implements OnInit {
   onSubmit() {
     if (this.compromisoForm.valid) {
       console.log('Formulario enviado:', this.compromisoForm.value);
-      // Aquí puedes agregar la lógica para enviar los datos
+
       alert('¡Formulario enviado con éxito!');
       this.compromisoForm.reset();
     } else {
-      // Marcar todos los campos como tocados para mostrar errores
+
       Object.keys(this.compromisoForm.controls).forEach(key => {
         this.compromisoForm.get(key)?.markAsTouched();
       });
